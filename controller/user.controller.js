@@ -78,7 +78,7 @@ exports.userSignOut = (req, res) => {
 };
 
 exports.getAllUser = (req, res) => {
-	User.find({}).exec((err, obj) => {
+	User.find({}, { username: 0, password: 0, _id: 0, __v: 0 }).exec((err, obj) => {
 		if (err) {
 			if (process.env.Mode == "dev") console.log(err);
 			res.status(400).send({ message: "Some Error Occurred! Please try again." });
@@ -101,7 +101,7 @@ exports.getUser = (req, res) => {
 		{
 			$or: query,
 		},
-		{ username: 0, password: 0 }
+		{ username: 0, password: 0, _id: 0, __v: 0 }
 	).exec((err, obj) => {
 		if (err) {
 			if (process.env.MODE == "dev") console.log(err);
