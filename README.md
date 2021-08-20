@@ -1,7 +1,7 @@
 <h1>Spak Backend Challenge Implementation</h1>
 <h3>By: Snehal Maheshwari</h3>
 <br />
-<h3>Live deployment can be found at <a>https://spak-user-auth.herokuapp.com/</a>
+<h3>Live deployment can be found at "https://spak-user-auth.herokuapp.com/"
 <h1>Readme</h1>
 <h3>Routes</h3>
 <h4>"https://spak-user-auth.herokuapp.com/api/user/signup" -- Route to Register</h4>
